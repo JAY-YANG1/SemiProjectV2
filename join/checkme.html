@@ -158,8 +158,8 @@
                             <div class="col-5 offset-1">
                                 <div class="form-group row">
                                     <label class="col-form-label col-4 text-warning text-right"
-                                           for="name">이름</label>
-                                    <input type="text" name="name" id="name"
+                                           for="name2">이름</label>
+                                    <input type="text" name="name" id="name2"
                                            class="form-control border-warning col-7">
                                 </div>
 
@@ -168,22 +168,30 @@
                                            for="jumin1">주민번호</label>
                                     <input type="text" name="jumin1" id="jumin1"
                                            class="form-control border-warning col-3">
+                                    <span class="col-form-label">&nbsp;&mdash;&nbsp;</span>
                                     <input type="text" name="jumin2" id="jumin2"
                                            class="form-control border-warning col-3">
                                 </div>
 
                                 <div class="form-group row">
-
+                                    <div class="custom-control custom-checkbox offset-4">
+                                        <input type="checkbox" id="chkjumin" name="chkjumin"
+                                           class="custom-control-input" value="y">
+                                        <label for="chkjumin" class="custom-control-label text-warning">
+                                            주민등록번호 처리에 동의합니다.
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-5">
                                 <ul style="color: blue; font-weight: bold">
-                                    <li>주민등록번호 입력없이 전화번호로 회원가입이 가능합니다.</li>
-                                    <li>이름, 생년월일과 성별은
-                                        <span class="text-danger">추후 변경할 수 없습니다.</span></li>
-                                    <li><span class="text-danger">휴대폰 가입인증</span>
-                                        을 하셔야 공개게시판 이용이 가능합니다.</li>
+                                    <li>실명확인 회원가입시 공개 게시판 이용이 가능합니다.</li>
+                                    <li>타인의 주민등록번호를 임의로 사용하면
+                                        <span class="text-danger">'주민등록법'에 의해 3년 이하의 징역 또는 1천만원 이하의 벌금</span>이 부과될 수 있습니다.</li>
+                                    <li>입력하신 주민등록번호는 <span class="text-danger">별도 저장되지 않으며,
+                                        신용평가기관을 통한 실명확인용</span>으로만 이용됩니다.</li>
+                                    <li>개인정보보호법에 따라 <span class="text-danger">이용동의</span>를 받습니다.</li>
                                 </ul>
                             </div>
 
@@ -192,9 +200,9 @@
                         <div class="row">
                             <div class="col text-center">
                                 <hr>
-                                <button type="button" id="chk1btn" class="btn btn-primary">
+                                <button type="button" id="chk2btn" class="btn btn-primary">
                                     <i class="fas fa-check"></i> 확인하기</button>
-                                <button type="button" id="cancel1btn" class="btn btn-danger">
+                                <button type="button" id="cancel2btn" class="btn btn-danger">
                                     <i class="fas fa-times"></i> 취소하기</button>
                             </div>
                         </div> <!-- 버튼들 -->
